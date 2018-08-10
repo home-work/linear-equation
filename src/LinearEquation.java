@@ -11,5 +11,16 @@ public class LinearEquation {
         a = scanner.nextFloat();
         System.out.println("Nhập vào hệ số b: ");
         b = scanner.nextFloat();
+
+        //Giải phương trình
+        if (a == 0) {
+            if (b == 0) {
+                System.out.println("Phương trình có vô số nghiệm");
+            } else {
+                System.out.println("Phương trình vô nghiệm");
+            }
+        } else {
+            System.out.println("Phương trình có nghiệm là: x = " + (0 - b) / a);
+        }
     }
 }
